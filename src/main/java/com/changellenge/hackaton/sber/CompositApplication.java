@@ -9,5 +9,4 @@ public class CompositApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CompositApplication.class, args);
 	}
-
 }
