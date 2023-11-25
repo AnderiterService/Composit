@@ -1,5 +1,7 @@
 package com.changellenge.hackaton.sber.controllers;
 
+import com.changellenge.hackaton.sber.config.ProcessorClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -7,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/composit")
 public class MainController
 {
-    private static final String PROCESSOR_URL = "";
+    @Autowired
+    private ProcessorClient processorClient;
 
     @GetMapping("/allforms")
     public void getAllForms()
